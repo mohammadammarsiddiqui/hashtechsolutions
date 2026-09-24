@@ -3,13 +3,14 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Contact — Hashtech Solutions</title>
-<meta name="description" content="Start a project with Hashtech Solutions — tell us about your brand, product or campaign." />
+<title>Contact | Start a Project with Hashtech Solutions</title>
+<meta name="description" content="Get in touch with Hashtech Solutions to start your brand, web or product design project. We respond to every enquiry within two business days." />
 <link rel="icon" href="assets/hashtech%20logo.png" />
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
 
 <script src="https://cdn.tailwindcss.com"></script>
 <script>
@@ -43,141 +44,141 @@
 <header data-nav class="nav-shell fixed top-0 inset-x-0 z-50">
   <div class="mx-auto max-w-8xl px-6 md:px-10 flex items-center justify-between h-20 md:h-24">
     <a href="index.html" class="flex items-center shrink-0">
-      <img src="assets/hashtech%20logo.png" alt="Hashtech Solutions" class="h-16 w-16 md:h-20 md:w-20 object-contain" />
+      <img src="assets/hashtech%20logo.png" alt="Hashtech Solutions" class="h-14 w-14 md:h-16 md:w-16 object-contain" />
     </a>
 
-    <nav class="hidden md:flex items-center gap-10 text-sm text-paper/80">
-      <a href="index.html" class="link-underline">Home</a>
-      <a href="work.html" class="link-underline">Work</a>
-      <a href="services.html" class="link-underline">Services</a>
-      <a href="contact.html" class="link-underline text-paper">Contact</a>
+    <nav class="pill-nav hidden md:flex items-center">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="work.html">Our Work</a>
+      <a href="contact.html" class="active">Contact</a>
     </nav>
 
-    <a href="contact.html" class="hidden md:inline-flex items-center gap-2 text-sm text-paper group">
-      <span class="link-underline">Start a project</span>
-      <span class="cta-arrow">→</span>
+    <a href="contact.html" class="discovery-btn hidden md:inline-flex">
+      <span>Book a Discovery Call</span>
+      <span class="discovery-icon"><i class="fa-solid fa-arrow-right text-xs"></i></span>
     </a>
 
     <button data-menu-btn aria-expanded="false" aria-label="Toggle menu" class="md:hidden text-paper">
-      <svg width="26" height="26" viewBox="0 0 26 26" fill="none"><path d="M4 8H22M4 18H22" stroke="currentColor" stroke-width="1.4" /></svg>
+      <i class="fa-solid fa-bars text-xl"></i>
     </button>
   </div>
 
   <div data-menu-panel class="hidden md:hidden flex-col gap-8 px-6 pt-6 pb-10 bg-ink border-t border-white/5 text-2xl font-display">
     <a href="index.html" class="text-paper/70">Home</a>
-    <a href="work.html" class="text-paper/70">Work</a>
     <a href="services.html" class="text-paper/70">Services</a>
+    <a href="work.html" class="text-paper/70">Our Work</a>
     <a href="contact.html" class="text-paper">Contact</a>
   </div>
 </header>
 
 <main>
   <!-- ============ PAGE HERO ============ -->
-  <section class="relative overflow-hidden pt-40 pb-16 md:pt-52 md:pb-20 border-b border-white/5">
-    <div class="blob blob-primary w-[500px] h-[500px] -top-56 -right-48 opacity-40"></div>
+  <section class="relative overflow-hidden pt-40 pb-16 md:pt-52 md:pb-20 grid-lines text-center">
+    <div class="blob blob-primary w-[500px] h-[500px] -top-56 left-1/2 -translate-x-1/2 opacity-30"></div>
     <div class="relative mx-auto max-w-8xl px-6 md:px-10">
-      <div class="grid md:grid-cols-12 gap-8 items-end">
-        <div class="md:col-span-8 reveal">
-          <p class="text-xs md:text-sm tracking-[0.25em] uppercase text-htorange mb-6">Start a Project</p>
-          <h1 class="font-display text-[12vw] leading-[0.94] md:text-[5vw] md:leading-[0.94] font-medium tracking-tight">
-            Tell us where you want to go.
-          </h1>
-        </div>
-        <div class="md:col-span-4 reveal reveal-delay-2">
-          <p class="text-paper/60 leading-relaxed">
-            Fill in the brief below or write to us directly — we reply to every enquiry within two working days.
-          </p>
-        </div>
-      </div>
+      <div class="section-pill justify-center mb-6 reveal"><span>Start a Project</span></div>
+      <h1 class="font-display text-[11vw] leading-[0.96] md:text-[4.6vw] md:leading-[1] font-medium tracking-tight max-w-3xl mx-auto reveal reveal-delay-1">
+        Tell us where you <span class="grad-text italic">want to go.</span>
+      </h1>
+      <p class="mt-6 text-paper/55 max-w-xl mx-auto reveal reveal-delay-2">
+        Fill in the brief below or write to us directly. We reply to every enquiry within two working days.
+      </p>
     </div>
   </section>
 
-  <!-- ============ FORM + INFO ============ -->
+  <!-- ============ CONTACT ============ -->
   <section class="relative py-20 md:py-28">
     <div class="mx-auto max-w-8xl px-6 md:px-10">
-      <div class="grid md:grid-cols-12 gap-12 md:gap-8">
-
-        <!-- Form -->
-        <div class="md:col-span-8 reveal">
-          <form data-contact-form novalidate>
-            <div class="grid sm:grid-cols-2 gap-x-8 gap-y-10">
-              <div class="sm:col-span-1">
-                <label for="name" class="block text-xs tracking-[0.2em] uppercase text-paper/40 mb-3">Your name</label>
-                <input id="name" name="name" type="text" required placeholder="Jordan Malik"
-                  class="field-underline w-full py-3 text-lg md:text-xl font-display" />
-                <p class="field-error hidden text-htorange text-xs mt-2">Please tell us your name.</p>
-              </div>
-              <div class="sm:col-span-1">
-                <label for="email" class="block text-xs tracking-[0.2em] uppercase text-paper/40 mb-3">Email</label>
-                <input id="email" name="email" type="email" required placeholder="jordan@company.com"
-                  class="field-underline w-full py-3 text-lg md:text-xl font-display" />
-                <p class="field-error hidden text-htorange text-xs mt-2">A valid email helps us reply.</p>
-              </div>
-              <div class="sm:col-span-2">
-                <label for="company" class="block text-xs tracking-[0.2em] uppercase text-paper/40 mb-3">Company <span class="normal-case text-paper/30">(optional)</span></label>
-                <input id="company" name="company" type="text" placeholder="Company or project name"
-                  class="field-underline w-full py-3 text-lg md:text-xl font-display" />
-              </div>
-
-              <div class="sm:col-span-2">
-                <label class="block text-xs tracking-[0.2em] uppercase text-paper/40 mb-4">Project budget</label>
-                <div class="flex flex-wrap gap-3">
-                  <label class="pill-option cursor-pointer">
-                    <input type="radio" name="budget" value="Under $10k" />
-                    <span class="px-5 py-2 rounded-full text-sm">Under $10k</span>
-                  </label>
-                  <label class="pill-option cursor-pointer">
-                    <input type="radio" name="budget" value="$10k – $30k" />
-                    <span class="px-5 py-2 rounded-full text-sm">$10k – $30k</span>
-                  </label>
-                  <label class="pill-option cursor-pointer">
-                    <input type="radio" name="budget" value="$30k – $75k" />
-                    <span class="px-5 py-2 rounded-full text-sm">$30k – $75k</span>
-                  </label>
-                  <label class="pill-option cursor-pointer">
-                    <input type="radio" name="budget" value="$75k+" />
-                    <span class="px-5 py-2 rounded-full text-sm">$75k+</span>
-                  </label>
-                </div>
-              </div>
-
-              <div class="sm:col-span-2">
-                <label for="message" class="block text-xs tracking-[0.2em] uppercase text-paper/40 mb-3">Tell us about the project</label>
-                <textarea id="message" name="message" required rows="4" placeholder="What are you building, and what does success look like?"
-                  class="field-underline w-full py-3 text-lg md:text-xl font-display resize-none"></textarea>
-                <p class="field-error hidden text-htorange text-xs mt-2">A short brief helps us prepare for the first call.</p>
-              </div>
-            </div>
-
-            <button type="submit" data-submit-btn
-              class="mt-12 inline-flex items-center gap-3 bg-paper text-ink px-8 py-4 rounded-full text-sm font-medium hover:bg-htorange hover:text-paper transition-colors duration-300">
-              <span data-btn-label>Send enquiry</span>
-              <span class="cta-arrow">→</span>
-            </button>
-
-            <p data-success class="hidden mt-8 text-htgold text-sm">
-              Thank you — your message has landed in our inbox. We'll be in touch within two working days.
-            </p>
-          </form>
-        </div>
+      <div class="grid lg:grid-cols-12 gap-10 items-start">
 
         <!-- Info -->
-        <div class="md:col-span-3 md:col-start-10 reveal reveal-delay-2 space-y-10">
+        <div class="lg:col-span-4 reveal space-y-10">
           <div>
-            <p class="text-xs tracking-[0.25em] uppercase text-paper/40 mb-3">Email</p>
-            <a href="mailto:hello@hashtechsolutions.com" class="link-underline text-lg font-display">hello@hashtechsolutions.com</a>
+            <h2 class="font-display text-2xl md:text-3xl mb-3">Let's Build Something <span class="grad-text italic">Exceptional.</span></h2>
+            <p class="text-paper/55 leading-relaxed">Have a project in mind? Tell us what you're looking for and our team will get back to you with the right approach to bring it to life.</p>
           </div>
-          <div>
-            <p class="text-xs tracking-[0.25em] uppercase text-paper/40 mb-3">Studio</p>
-            <p class="text-paper/70 leading-relaxed">Karachi, Pakistan<br />Working with clients worldwide</p>
+
+          <div class="space-y-5">
+            <a href="mailto:hello@hashtechsolutions.com" class="contact-info-item-v2">
+              <span class="contact-info-icon-v2"><i class="fa-solid fa-envelope"></i></span>
+              <span><small>Email Us</small>hello@hashtechsolutions.com</span>
+            </a>
+            <div class="contact-info-item-v2">
+              <span class="contact-info-icon-v2"><i class="fa-solid fa-clock"></i></span>
+              <span><small>Response Time</small>Within two business days</span>
+            </div>
           </div>
+
           <div>
-            <p class="text-xs tracking-[0.25em] uppercase text-paper/40 mb-3">Follow</p>
-            <ul class="space-y-2 text-paper/70">
-              <li><a href="#" class="link-underline">Instagram</a></li>
-              <li><a href="#" class="link-underline">LinkedIn</a></li>
-              <li><a href="#" class="link-underline">Behance</a></li>
-            </ul>
+            <p class="text-xs tracking-[0.25em] uppercase text-paper/40 mb-4">Follow</p>
+            <div class="flex gap-3">
+              <a href="#" class="footer-socials" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#" class="footer-socials" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#" class="footer-socials" aria-label="Behance"><i class="fa-brands fa-behance"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Form -->
+        <div class="lg:col-span-8 reveal reveal-delay-2">
+          <div class="contact-form-card">
+            <div class="mb-8">
+              <h3 class="font-display text-2xl">Start Your Project</h3>
+              <p class="text-paper/50 text-sm mt-1">Fill out the form and let's talk about your next big idea.</p>
+            </div>
+
+            <form data-contact-form novalidate>
+              <div class="grid sm:grid-cols-2 gap-5">
+                <div class="form-field-v2">
+                  <label for="name">Your Name</label>
+                  <input id="name" name="name" type="text" required placeholder="John Smith" />
+                  <p class="field-error hidden text-htorange text-xs mt-2">Please tell us your name.</p>
+                </div>
+
+                <div class="form-field-v2">
+                  <label for="email">Email Address</label>
+                  <input id="email" name="email" type="email" required placeholder="john@example.com" />
+                  <p class="field-error hidden text-htorange text-xs mt-2">A valid email helps us reply.</p>
+                </div>
+
+                <div class="form-field-v2">
+                  <label for="phone">Phone Number <span class="normal-case text-paper/30">(optional)</span></label>
+                  <input id="phone" name="phone" type="tel" placeholder="+1 000 000 0000" />
+                </div>
+
+                <div class="form-field-v2">
+                  <label for="service">Select Service</label>
+                  <select id="service" name="service" required>
+                    <option value="" selected disabled>Choose a service</option>
+                    <option value="Strategy & Positioning">Strategy &amp; Positioning</option>
+                    <option value="Brand Identity">Brand Identity</option>
+                    <option value="Web & Product Design">Web &amp; Product Design</option>
+                    <option value="Development & Engineering">Development &amp; Engineering</option>
+                    <option value="Growth & Campaigns">Growth &amp; Campaigns</option>
+                    <option value="Support & Optimization">Support &amp; Optimization</option>
+                    <option value="Other">Other</option>
+                  </select>
+                  <p class="field-error hidden text-htorange text-xs mt-2">Let us know which service fits best.</p>
+                </div>
+
+                <div class="form-field-v2 sm:col-span-2">
+                  <label for="message">Tell Us About Your Project</label>
+                  <textarea id="message" name="message" required rows="5" placeholder="What are you building, and what does success look like?"></textarea>
+                  <p class="field-error hidden text-htorange text-xs mt-2">A short brief helps us prepare for the first call.</p>
+                </div>
+
+                <div class="sm:col-span-2">
+                  <button type="submit" class="contact-submit-btn-v2" data-submit-btn>
+                    <span data-btn-label>Send Your Enquiry</span>
+                    <span class="cta-arrow"><i class="fa-solid fa-arrow-up-right"></i></span>
+                  </button>
+                  <p data-success class="hidden mt-4 text-htgold text-sm text-center">
+                    Thank you. Your message has landed in our inbox. We'll be in touch within two working days.
+                  </p>
+                </div>
+              </div>
+            </form>
           </div>
         </div>
 
@@ -187,41 +188,47 @@
 </main>
 
 <!-- ============ FOOTER ============ -->
-<footer class="relative border-t border-white/5 pt-20 pb-10">
+<footer class="relative pt-16 pb-10 grid-lines">
   <div class="mx-auto max-w-8xl px-6 md:px-10">
-    <div class="grid md:grid-cols-12 gap-10 pb-16 border-b border-white/5">
-      <div class="md:col-span-5">
-        <img src="assets/hashtech%20logo.png" class="h-20 w-20 mb-6" alt="Hashtech Solutions" />
-        <p class="text-paper/50 max-w-xs leading-relaxed">A strategy-led design and technology studio for brands who want to be remembered.</p>
+    <div class="footer-glass">
+      <div class="grid md:grid-cols-12 gap-10 pb-12 border-b border-white/10">
+        <div class="md:col-span-5">
+          <img src="assets/hashtech%20logo.png" class="h-20 w-20 mb-6" alt="Hashtech Solutions" />
+          <p class="text-paper/50 max-w-xs leading-relaxed">A strategy-led design and technology studio for brands who want to be remembered.</p>
+          <div class="flex gap-3 mt-6">
+            <a href="#" class="footer-socials" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="footer-socials" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" class="footer-socials" aria-label="Behance"><i class="fa-brands fa-behance"></i></a>
+          </div>
+        </div>
+        <div class="md:col-span-2 md:col-start-7">
+          <p class="text-xs tracking-[0.25em] uppercase text-paper/40 mb-4">Sitemap</p>
+          <ul class="space-y-2 text-paper/70">
+            <li><a href="index.html" class="link-underline">Home</a></li>
+            <li><a href="work.html" class="link-underline">Work</a></li>
+            <li><a href="services.html" class="link-underline">Services</a></li>
+            <li><a href="contact.html" class="link-underline">Contact</a></li>
+          </ul>
+        </div>
+        <div class="md:col-span-2">
+          <p class="text-xs tracking-[0.25em] uppercase text-paper/40 mb-4">Connect</p>
+          <ul class="space-y-2 text-paper/70">
+            <li><a href="#" class="link-underline">Instagram</a></li>
+            <li><a href="#" class="link-underline">LinkedIn</a></li>
+            <li><a href="#" class="link-underline">Behance</a></li>
+          </ul>
+        </div>
+        <div class="md:col-span-2">
+          <p class="text-xs tracking-[0.25em] uppercase text-paper/40 mb-4">Contact</p>
+          <ul class="space-y-2 text-paper/70">
+            <li>hello@hashtechsolutions.com</li>
+          </ul>
+        </div>
       </div>
-      <div class="md:col-span-2 md:col-start-7">
-        <p class="text-xs tracking-[0.25em] uppercase text-paper/40 mb-4">Sitemap</p>
-        <ul class="space-y-2 text-paper/70">
-          <li><a href="index.html" class="link-underline">Home</a></li>
-          <li><a href="work.html" class="link-underline">Work</a></li>
-          <li><a href="services.html" class="link-underline">Services</a></li>
-          <li><a href="contact.html" class="link-underline">Contact</a></li>
-        </ul>
+      <div class="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-paper/40">
+        <p>© <span data-year></span> Hashtech Solutions. All rights reserved.</p>
+        <p>Designed and built by Hashtech Studio</p>
       </div>
-      <div class="md:col-span-2">
-        <p class="text-xs tracking-[0.25em] uppercase text-paper/40 mb-4">Connect</p>
-        <ul class="space-y-2 text-paper/70">
-          <li><a href="#" class="link-underline">Instagram</a></li>
-          <li><a href="#" class="link-underline">LinkedIn</a></li>
-          <li><a href="#" class="link-underline">Behance</a></li>
-        </ul>
-      </div>
-      <div class="md:col-span-2">
-        <p class="text-xs tracking-[0.25em] uppercase text-paper/40 mb-4">Studio</p>
-        <ul class="space-y-2 text-paper/70">
-          <li>Karachi, Pakistan</li>
-          <li>hello@hashtechsolutions.com</li>
-        </ul>
-      </div>
-    </div>
-    <div class="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-paper/40">
-      <p>© <span data-year></span> Hashtech Solutions. All rights reserved.</p>
-      <p>Design &amp; build — Hashtech Studio</p>
     </div>
   </div>
 </footer>
@@ -241,16 +248,16 @@
       let valid = true;
 
       form.querySelectorAll("[required]").forEach((field) => {
-        const errorEl = field.closest("div").querySelector(".field-error");
+        const errorEl = field.closest(".form-field-v2")?.querySelector(".field-error");
         const isEmpty = !field.value.trim();
         const isBadEmail = field.type === "email" && field.value.trim() && !/^\S+@\S+\.\S+$/.test(field.value.trim());
 
         if (isEmpty || isBadEmail) {
           valid = false;
-          field.classList.add("border-htorange");
+          field.style.borderColor = "#dd6a2c";
           if (errorEl) errorEl.classList.remove("hidden");
         } else {
-          field.classList.remove("border-htorange");
+          field.style.borderColor = "";
           if (errorEl) errorEl.classList.add("hidden");
         }
       });
@@ -262,7 +269,7 @@
 
       setTimeout(() => {
         form.reset();
-        btnLabel.textContent = "Send enquiry";
+        btnLabel.textContent = "Send Your Enquiry";
         submitBtn.disabled = false;
         successMsg.classList.remove("hidden");
       }, 900);
@@ -270,8 +277,8 @@
 
     form.querySelectorAll("[required]").forEach((field) => {
       field.addEventListener("input", () => {
-        field.classList.remove("border-htorange");
-        const errorEl = field.closest("div").querySelector(".field-error");
+        field.style.borderColor = "";
+        const errorEl = field.closest(".form-field-v2")?.querySelector(".field-error");
         if (errorEl) errorEl.classList.add("hidden");
       });
     });

@@ -3,13 +3,14 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Hashtech Solutions — Digital & Creative Agency</title>
-<meta name="description" content="Hashtech Solutions is a strategy-led design and technology studio shaping brand, product and digital experience." />
+<title>Hashtech Solutions | Brand, Web & Product Design Agency</title>
+<meta name="description" content="Hashtech Solutions is a creative and digital agency specializing in brand identity, web design, product design and growth marketing for ambitious companies." />
 <link rel="icon" href="assets/hashtech%20logo.png" />
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
 
 <script src="https://cdn.tailwindcss.com"></script>
 <script>
@@ -43,177 +44,673 @@
 <header data-nav class="nav-shell fixed top-0 inset-x-0 z-50">
   <div class="mx-auto max-w-8xl px-6 md:px-10 flex items-center justify-between h-20 md:h-24">
     <a href="index.html" class="flex items-center shrink-0">
-      <img src="assets/hashtech%20logo.png" alt="Hashtech Solutions" class="h-16 w-16 md:h-20 md:w-20 object-contain" />
+      <img src="assets/hashtech%20logo.png" alt="Hashtech Solutions" class="h-14 w-14 md:h-16 md:w-16 object-contain" />
     </a>
 
-    <nav class="hidden md:flex items-center gap-10 text-sm text-paper/80">
-      <a href="index.html" class="link-underline text-paper">Home</a>
-      <a href="work.html" class="link-underline">Work</a>
-      <a href="services.html" class="link-underline">Services</a>
-      <a href="contact.html" class="link-underline">Contact</a>
+    <nav class="pill-nav hidden md:flex items-center">
+      <a href="index.html" class="active">Home</a>
+      <a href="services.html">Services</a>
+      <a href="work.html">Our Work</a>
+      <a href="contact.html">Contact</a>
     </nav>
 
-    <a href="contact.html" class="hidden md:inline-flex items-center gap-2 text-sm text-paper group">
-      <span class="link-underline">Start a project</span>
-      <span class="cta-arrow">→</span>
+    <a href="contact.html" class="discovery-btn hidden md:inline-flex">
+      <span>Book a Discovery Call</span>
+      <span class="discovery-icon"><i class="fa-solid fa-arrow-right text-xs"></i></span>
     </a>
 
     <button data-menu-btn aria-expanded="false" aria-label="Toggle menu" class="md:hidden text-paper">
-      <svg width="26" height="26" viewBox="0 0 26 26" fill="none"><path d="M4 8H22M4 18H22" stroke="currentColor" stroke-width="1.4" /></svg>
+      <i class="fa-solid fa-bars text-xl"></i>
     </button>
   </div>
 
   <div data-menu-panel class="hidden md:hidden flex-col gap-8 px-6 pt-6 pb-10 bg-ink border-t border-white/5 text-2xl font-display">
     <a href="index.html" class="text-paper">Home</a>
-    <a href="work.html" class="text-paper/70">Work</a>
     <a href="services.html" class="text-paper/70">Services</a>
+    <a href="work.html" class="text-paper/70">Our Work</a>
     <a href="contact.html" class="text-paper/70">Contact</a>
   </div>
 </header>
 
 <main>
   <!-- ============ HERO ============ -->
-  <section class="relative overflow-hidden pt-40 pb-24 md:pt-56 md:pb-36 border-b border-white/5">
-    <div class="blob blob-primary w-[560px] h-[560px] -top-48 -right-56"></div>
-    <div class="blob blob-secondary w-[420px] h-[420px] top-1/3 -left-52"></div>
+  <section class="relative overflow-hidden pt-44 pb-[340px] md:pt-56 md:pb-[420px] text-center">
+    <div class="absolute inset-0 bg-gradient-to-b from-htblue-dark/25 via-ink to-ink"></div>
+    <div class="hero-grid-bg"></div>
+    <div class="blob blob-primary w-[520px] h-[520px] -top-40 left-1/2 -translate-x-1/2 opacity-30"></div>
 
+    <div class="relative mx-auto max-w-4xl px-6">
+      <p class="font-display italic text-2xl md:text-4xl text-paper/80 reveal">
+        Award-Winning <strong class="font-sans not-italic font-semibold text-paper">Creative</strong> Studio
+      </p>
+      <h1 class="font-display text-[13vw] leading-[0.95] md:text-[5.5vw] md:leading-[0.95] font-medium tracking-tight mt-3 reveal reveal-delay-1">
+        Brand &amp; Web Design Agency.
+      </h1>
+      <p class="font-display italic text-2xl md:text-4xl text-paper/80 mt-2 reveal reveal-delay-2">Built To Grow.</p>
+
+      <p class="mt-6 text-paper/65 text-base md:text-lg leading-relaxed reveal reveal-delay-2">
+        We design brand identities and build websites and products
+        <br class="hidden md:block" />
+        that turn first impressions into paying customers,
+        <br class="hidden md:block" />
+        backed by strategy from day one.
+      </p>
+
+      <a href="contact.html" class="project-btn mt-8 reveal reveal-delay-3">
+        <span class="project-btn-icon"><i class="fa-solid fa-rocket text-paper"></i></span>
+        <span class="project-btn-text">Let's Discuss Your Project<br />in 30 Minutes</span>
+      </a>
+    </div>
+
+    <!-- ORBIT -->
+    <div class="orbit-stage">
+      <div class="orbit-rotator">
+        <div class="orbit-item" style="--angle: 0deg"><div class="orbit-logo"><i class="fa-brands fa-figma"></i></div></div>
+        <div class="orbit-item" style="--angle: 36deg"><div class="orbit-logo"><i class="fa-brands fa-wordpress"></i></div></div>
+        <div class="orbit-item" style="--angle: 72deg"><div class="orbit-logo"><i class="fa-brands fa-shopify"></i></div></div>
+        <div class="orbit-item" style="--angle: 108deg"><div class="orbit-logo"><i class="fa-brands fa-react"></i></div></div>
+        <div class="orbit-item" style="--angle: 144deg"><div class="orbit-logo"><i class="fa-brands fa-js"></i></div></div>
+        <div class="orbit-item" style="--angle: 180deg"><div class="orbit-logo"><i class="fa-brands fa-node-js"></i></div></div>
+        <div class="orbit-item" style="--angle: 216deg"><div class="orbit-logo"><i class="fa-brands fa-html5"></i></div></div>
+        <div class="orbit-item" style="--angle: 252deg"><div class="orbit-logo"><i class="fa-brands fa-css3-alt"></i></div></div>
+        <div class="orbit-item" style="--angle: 288deg"><div class="orbit-logo"><i class="fa-brands fa-sketch"></i></div></div>
+        <div class="orbit-item" style="--angle: 324deg"><div class="orbit-logo"><i class="fa-brands fa-adobe"></i></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PORTFOLIO PREVIEW STRIP ============ -->
+  <section class="relative py-2 border-b border-white/5 overflow-hidden bg-ink">
+    <div class="marquee-track" data-marquee>
+      <div class="h-[190px] w-[280px] mx-2 rounded-md case-media" style="--case-gradient: linear-gradient(135deg, #1d5678, #3184b0);"></div>
+      <div class="h-[190px] w-[280px] mx-2 rounded-md case-media" style="--case-gradient: linear-gradient(135deg, #a94e21, #e2a83a);"></div>
+      <div class="h-[190px] w-[280px] mx-2 rounded-md case-media" style="--case-gradient: linear-gradient(135deg, #141416, #1d5678);"></div>
+      <div class="h-[190px] w-[280px] mx-2 rounded-md case-media" style="--case-gradient: linear-gradient(135deg, #dd6a2c, #e2a83a);"></div>
+      <div class="h-[190px] w-[280px] mx-2 rounded-md case-media" style="--case-gradient: linear-gradient(135deg, #a94e21, #1d5678);"></div>
+      <div class="h-[190px] w-[280px] mx-2 rounded-md case-media" style="--case-gradient: linear-gradient(135deg, #3184b0, #8fc3dd);"></div>
+    </div>
+  </section>
+
+  <!-- ============ CLIENT LOGO BAND ============ -->
+  <section class="relative py-10 overflow-hidden" style="background: linear-gradient(90deg, #a94e21 0%, #1d5678 35%, #1d5678 65%, #e2a83a 100%);">
+    <div class="marquee-track" data-marquee>
+      <span class="font-display text-2xl text-paper/90 whitespace-nowrap px-8">Northbridge Capital</span>
+      <span class="font-display text-2xl text-paper/90 whitespace-nowrap px-8">Solstice &amp; Co.</span>
+      <span class="font-display text-2xl text-paper/90 whitespace-nowrap px-8">Meridian Labs</span>
+      <span class="font-display text-2xl text-paper/90 whitespace-nowrap px-8">Ferro Industries</span>
+      <span class="font-display text-2xl text-paper/90 whitespace-nowrap px-8">Amara Health</span>
+      <span class="font-display text-2xl text-paper/90 whitespace-nowrap px-8">Vantage Point</span>
+      <span class="font-display text-2xl text-paper/90 whitespace-nowrap px-8">Orenda Foods</span>
+      <span class="font-display text-2xl text-paper/90 whitespace-nowrap px-8">Kestrel Aviation</span>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT + STATS ============ -->
+  <section class="relative py-24 md:py-32 grid-lines">
+    <div class="mx-auto max-w-8xl px-6 md:px-10">
+      <div class="grid md:grid-cols-12 gap-10">
+        <div class="md:col-span-3 reveal">
+          <div class="section-pill"><span>About Us</span><b>01</b></div>
+        </div>
+        <div class="md:col-span-9 reveal reveal-delay-1">
+          <p class="font-display text-2xl md:text-4xl leading-[1.2] tracking-tight">
+            We're <span class="grad-text italic">Hashtech Solutions</span>, a modern digital agency focused on building brands, websites and products that move businesses forward. We blend creative thinking, technical craft and business strategy into solutions built around your goals, not just your screens. <strong class="font-normal text-paper">From first idea to final launch, we create digital experiences that look exceptional, perform seamlessly and deliver real growth.</strong>
+          </p>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-5 mt-14">
+        <div class="stat-card reveal">
+          <div class="stat-card-top"><span>I.</span><p>Core<br />Services</p></div>
+          <div class="stat-card-bottom"><strong>05</strong><i class="fa-solid fa-arrow-up-right"></i></div>
+        </div>
+        <div class="stat-card reveal reveal-delay-1">
+          <div class="stat-card-top"><span>II.</span><p>Design<br />Disciplines</p></div>
+          <div class="stat-card-bottom"><strong>04</strong><i class="fa-solid fa-arrow-up-right"></i></div>
+        </div>
+        <div class="stat-card reveal reveal-delay-2">
+          <div class="stat-card-top"><span>III.</span><p>Your Point<br />of Contact</p></div>
+          <div class="stat-card-bottom"><strong>1</strong><i class="fa-solid fa-arrow-up-right"></i></div>
+        </div>
+        <div class="stat-card reveal reveal-delay-3">
+          <div class="stat-card-top"><span>IV.</span><p>Free Discovery<br />Call</p></div>
+          <div class="stat-card-bottom"><strong>30m</strong><i class="fa-solid fa-arrow-up-right"></i></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES GRID ============ -->
+  <section class="relative py-24 md:py-32 border-t border-white/5" id="services">
+    <div class="blob blob-secondary w-[500px] h-[500px] top-0 -right-52 opacity-25"></div>
     <div class="relative mx-auto max-w-8xl px-6 md:px-10">
-      <div class="grid md:grid-cols-12 gap-8 items-end">
-        <div class="md:col-span-9 reveal">
-          <p class="text-xs md:text-sm tracking-[0.25em] uppercase text-htorange mb-6">Digital &amp; Creative Agency — Karachi / Remote</p>
-          <h1 class="font-display text-[15vw] leading-[0.92] md:text-[6.4vw] md:leading-[0.92] font-medium tracking-tight">
-            We build brands<br class="hidden md:block" /> that refuse to <span class="grad-text italic">blend in.</span>
-          </h1>
-        </div>
-        <div class="md:col-span-3 reveal reveal-delay-2 md:pb-3">
-          <p class="text-paper/60 text-base md:text-lg leading-relaxed">
-            Hashtech Solutions is a strategy-led design and technology studio — we shape identity, product and digital experience for companies who want to be remembered.
-          </p>
-          <a href="work.html" class="mt-6 inline-flex items-center gap-2 text-paper text-sm group">
-            <span class="link-underline">See the work</span><span class="cta-arrow">→</span>
-          </a>
-        </div>
+      <div class="text-center max-w-2xl mx-auto mb-14 reveal">
+        <div class="section-pill mb-6"><span>Our Services</span></div>
+        <h2 class="font-display text-3xl md:text-5xl tracking-tight">Digital Solutions Built <span class="grad-text italic">Around Your Business.</span></h2>
+        <p class="mt-4 text-paper/55">We offer end-to-end creative and digital services to help your brand grow, perform and scale.</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-5">
+        <a href="services.html" class="service-box reveal">
+          <span class="service-box-number">01</span>
+          <div class="service-box-icon"><i class="fa-solid fa-compass-drafting"></i></div>
+          <div class="service-box-content">
+            <h3>Strategy &amp; Positioning</h3>
+            <div class="service-box-line"></div>
+            <p>Market analysis, audience research and narrative that give every future decision a clear answer.</p>
+          </div>
+          <div class="service-box-bottom"><span>Learn More</span><i class="fa-solid fa-arrow-right"></i></div>
+        </a>
+
+        <a href="services.html" class="service-box reveal reveal-delay-1">
+          <span class="service-box-number">02</span>
+          <div class="service-box-icon"><i class="fa-solid fa-pen-nib"></i></div>
+          <div class="service-box-content">
+            <h3>Brand Identity</h3>
+            <div class="service-box-line"></div>
+            <p>Visual and verbal identity systems built to hold up across a pitch deck, a product and packaging.</p>
+          </div>
+          <div class="service-box-bottom"><span>Learn More</span><i class="fa-solid fa-arrow-right"></i></div>
+        </a>
+
+        <a href="services.html" class="service-box reveal reveal-delay-2">
+          <span class="service-box-number">03</span>
+          <div class="service-box-icon"><i class="fa-solid fa-laptop-code"></i></div>
+          <div class="service-box-content">
+            <h3>Web &amp; Product Design</h3>
+            <div class="service-box-line"></div>
+            <p>Interfaces designed with editorial hierarchy and rhythm, tested against real content early.</p>
+          </div>
+          <div class="service-box-bottom"><span>Learn More</span><i class="fa-solid fa-arrow-right"></i></div>
+        </a>
+
+        <a href="services.html" class="service-box reveal">
+          <span class="service-box-number">04</span>
+          <div class="service-box-icon"><i class="fa-solid fa-code"></i></div>
+          <div class="service-box-content">
+            <h3>Development &amp; Engineering</h3>
+            <div class="service-box-line"></div>
+            <p>Fast, accessible, maintainable builds on the stack that actually fits the problem.</p>
+          </div>
+          <div class="service-box-bottom"><span>Learn More</span><i class="fa-solid fa-arrow-right"></i></div>
+        </a>
+
+        <a href="services.html" class="service-box reveal reveal-delay-1">
+          <span class="service-box-number">05</span>
+          <div class="service-box-icon"><i class="fa-solid fa-bullhorn"></i></div>
+          <div class="service-box-content">
+            <h3>Growth &amp; Campaigns</h3>
+            <div class="service-box-line"></div>
+            <p>Content, paid and organic campaigns that carry a brand into the world after launch.</p>
+          </div>
+          <div class="service-box-bottom"><span>Learn More</span><i class="fa-solid fa-arrow-right"></i></div>
+        </a>
+
+        <a href="services.html" class="service-box reveal reveal-delay-2">
+          <span class="service-box-number">06</span>
+          <div class="service-box-icon"><i class="fa-solid fa-headset"></i></div>
+          <div class="service-box-content">
+            <h3>Support &amp; Optimization</h3>
+            <div class="service-box-line"></div>
+            <p>Ongoing iteration, performance tuning and support once a project is live.</p>
+          </div>
+          <div class="service-box-bottom"><span>Learn More</span><i class="fa-solid fa-arrow-right"></i></div>
+        </a>
       </div>
     </div>
   </section>
 
-  <!-- ============ VALUE STATEMENT ============ -->
-  <section class="relative py-24 md:py-36 border-b border-white/5">
+  <!-- ============ WHY CHOOSE US ============ -->
+  <section class="relative py-24 md:py-32 grid-lines">
     <div class="mx-auto max-w-8xl px-6 md:px-10">
-      <div class="grid md:grid-cols-12 gap-6 md:gap-8">
-        <div class="md:col-span-2 reveal">
-          <span class="text-xs tracking-[0.25em] uppercase text-paper/40">01 — Approach</span>
+      <div class="grid lg:grid-cols-12 gap-10 lg:gap-8">
+        <div class="lg:col-span-5 reveal">
+          <div class="section-pill mb-6"><span>Why Choose Us</span><b>04</b></div>
+          <h2 class="font-display text-3xl md:text-4xl tracking-tight">Built For Brands That <span class="grad-text italic">Want To Grow.</span></h2>
+          <p class="mt-5 text-paper/55 leading-relaxed max-w-md">We don't just create digital experiences that look good. We combine strategy, creativity, technology and performance to build solutions that actually move your business forward.</p>
+          <a href="contact.html" class="why-choose-btn mt-8">Let's Work Together <i class="fa-solid fa-arrow-up-right"></i></a>
         </div>
-        <div class="md:col-span-10 reveal reveal-delay-1">
-          <p class="font-display text-3xl md:text-5xl leading-[1.25] md:leading-[1.18] font-normal">
-            Good design isn't decoration <span class="text-paper/30">—</span> it's the clearest path between what a business is and what it needs the world to feel. We start every engagement by <span class="italic text-htgold">removing</span> what doesn't matter, so what remains can carry the weight.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- ============ FLOATING MEDIA ============ -->
-  <section class="relative py-20 md:py-28 border-b border-white/5">
-    <div class="mx-auto max-w-8xl px-6 md:px-10">
-      <div class="grid md:grid-cols-12 gap-8 items-center">
-        <div class="md:col-span-7 reveal">
-          <div data-parallax class="float-media relative aspect-[4/5] md:aspect-[16/11] rounded-sm overflow-hidden case-media" style="--case-gradient: linear-gradient(135deg, #1d5678, #dd6a2c 60%, #e2a83a);">
-            <div class="absolute inset-0 flex items-end p-6 md:p-8">
-              <div class="flex items-center gap-3 text-paper/90 text-sm">
-                <span class="h-2 w-2 rounded-full bg-htorange animate-pulse"></span> Reel — Selected Work, 2025
-              </div>
+        <div class="lg:col-span-7 space-y-4">
+          <div class="why-choose-item reveal">
+            <div class="why-choose-number">01</div>
+            <div class="why-choose-icon"><i class="fa-solid fa-lightbulb"></i></div>
+            <div class="why-choose-text">
+              <h3>Strategy Before Execution</h3>
+              <p>Every project starts with your goals, audience and challenges before we design or build anything.</p>
             </div>
-            <button aria-label="Play reel" class="absolute inset-0 m-auto h-16 w-16 md:h-20 md:w-20 rounded-full border border-paper/40 flex items-center justify-center text-paper hover:bg-paper hover:text-ink transition-colors duration-300">
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M5 3.5v13l11-6.5-11-6.5z" /></svg>
-            </button>
+            <div class="why-choose-arrow"><i class="fa-solid fa-arrow-up-right"></i></div>
+          </div>
+          <div class="why-choose-item reveal reveal-delay-1">
+            <div class="why-choose-number">02</div>
+            <div class="why-choose-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+            <div class="why-choose-text">
+              <h3>Creative That Gets Attention</h3>
+              <p>Distinctive visuals and digital experiences designed to make your brand stand out in a crowded market.</p>
+            </div>
+            <div class="why-choose-arrow"><i class="fa-solid fa-arrow-up-right"></i></div>
+          </div>
+          <div class="why-choose-item reveal reveal-delay-2">
+            <div class="why-choose-number">03</div>
+            <div class="why-choose-icon"><i class="fa-solid fa-code"></i></div>
+            <div class="why-choose-text">
+              <h3>Built With Modern Technology</h3>
+              <p>From fast websites to scalable digital products, we use modern technology built to perform.</p>
+            </div>
+            <div class="why-choose-arrow"><i class="fa-solid fa-arrow-up-right"></i></div>
+          </div>
+          <div class="why-choose-item reveal reveal-delay-3">
+            <div class="why-choose-number">04</div>
+            <div class="why-choose-icon"><i class="fa-solid fa-chart-line"></i></div>
+            <div class="why-choose-text">
+              <h3>Focused On Real Growth</h3>
+              <p>Our work is built around measurable impact: stronger visibility, better engagement and long-term growth.</p>
+            </div>
+            <div class="why-choose-arrow"><i class="fa-solid fa-arrow-up-right"></i></div>
           </div>
         </div>
-        <div class="md:col-span-4 md:col-start-9 reveal reveal-delay-2">
-          <span class="text-xs tracking-[0.25em] uppercase text-paper/40">02 — Discipline</span>
-          <h2 class="font-display text-2xl md:text-3xl mt-4 mb-4">Strategy first. Craft always.</h2>
-          <p class="text-paper/60 leading-relaxed">
-            From positioning to pixel, every engagement moves through the same discipline: research, narrative, design, build. Nothing ships until it earns its place.
-          </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FEATURED WORK (TABS) ============ -->
+  <section class="relative py-24 md:py-32 border-t border-white/5">
+    <div class="blob blob-primary w-[480px] h-[480px] top-10 -left-48 opacity-20"></div>
+    <div class="relative mx-auto max-w-8xl px-6 md:px-10">
+      <div class="text-center max-w-2xl mx-auto mb-12 reveal">
+        <div class="section-pill mb-6"><span>Our Work</span><b>03</b></div>
+        <h2 class="font-display text-3xl md:text-5xl tracking-tight">Featured <span class="grad-text italic">Projects</span></h2>
+        <p class="mt-4 text-paper/55">A selection of work we've created for ambitious brands and growing businesses.</p>
+      </div>
+
+      <div class="flex justify-center mb-12 reveal">
+        <div class="portfolio-tabs flex-wrap justify-center" data-filter-group>
+          <button data-filter="all" class="active">All Work</button>
+          <button data-filter="branding">Branding</button>
+          <button data-filter="product">Web &amp; Product</button>
+          <button data-filter="campaign">Campaign</button>
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6" data-case-grid>
+        <a href="work.html" class="portfolio-card-v2 reveal" data-category="branding">
+          <div class="portfolio-image-v2 aspect-[4/3] case-media" style="--case-gradient: linear-gradient(135deg, #1d5678, #3184b0);">
+            <div class="portfolio-image-overlay"><span>View Project <i class="fa-solid fa-arrow-up-right"></i></span></div>
+          </div>
+          <div class="portfolio-card-v2-content">
+            <span class="text-paper/40 text-xs">Branding</span>
+            <h3 class="font-display text-xl mt-1">Northbridge Capital</h3>
+            <div class="portfolio-meta-v2"><small>Finance</small><small>2025</small></div>
+          </div>
+        </a>
+        <a href="work.html" class="portfolio-card-v2 reveal reveal-delay-1" data-category="product">
+          <div class="portfolio-image-v2 aspect-[4/3] case-media" style="--case-gradient: linear-gradient(135deg, #a94e21, #e2a83a);">
+            <div class="portfolio-image-overlay"><span>View Project <i class="fa-solid fa-arrow-up-right"></i></span></div>
+          </div>
+          <div class="portfolio-card-v2-content">
+            <span class="text-paper/40 text-xs">Web &amp; Product</span>
+            <h3 class="font-display text-xl mt-1">Amara Health</h3>
+            <div class="portfolio-meta-v2"><small>Healthcare</small><small>2025</small></div>
+          </div>
+        </a>
+        <a href="work.html" class="portfolio-card-v2 reveal reveal-delay-2" data-category="campaign">
+          <div class="portfolio-image-v2 aspect-[4/3] case-media" style="--case-gradient: linear-gradient(135deg, #dd6a2c, #e2a83a);">
+            <div class="portfolio-image-overlay"><span>View Project <i class="fa-solid fa-arrow-up-right"></i></span></div>
+          </div>
+          <div class="portfolio-card-v2-content">
+            <span class="text-paper/40 text-xs">Campaign</span>
+            <h3 class="font-display text-xl mt-1">Orenda Foods</h3>
+            <div class="portfolio-meta-v2"><small>Food &amp; Beverage</small><small>2024</small></div>
+          </div>
+        </a>
+        <a href="work.html" class="portfolio-card-v2 reveal" data-category="branding">
+          <div class="portfolio-image-v2 aspect-[4/3] case-media" style="--case-gradient: linear-gradient(135deg, #a94e21, #1d5678);">
+            <div class="portfolio-image-overlay"><span>View Project <i class="fa-solid fa-arrow-up-right"></i></span></div>
+          </div>
+          <div class="portfolio-card-v2-content">
+            <span class="text-paper/40 text-xs">Branding</span>
+            <h3 class="font-display text-xl mt-1">Kestrel Aviation</h3>
+            <div class="portfolio-meta-v2"><small>Aviation</small><small>2024</small></div>
+          </div>
+        </a>
+        <a href="work.html" class="portfolio-card-v2 reveal reveal-delay-1" data-category="product">
+          <div class="portfolio-image-v2 aspect-[4/3] case-media" style="--case-gradient: linear-gradient(135deg, #3184b0, #8fc3dd);">
+            <div class="portfolio-image-overlay"><span>View Project <i class="fa-solid fa-arrow-up-right"></i></span></div>
+          </div>
+          <div class="portfolio-card-v2-content">
+            <span class="text-paper/40 text-xs">Web &amp; Product</span>
+            <h3 class="font-display text-xl mt-1">Vantage Point</h3>
+            <div class="portfolio-meta-v2"><small>Investment</small><small>2023</small></div>
+          </div>
+        </a>
+        <a href="work.html" class="portfolio-card-v2 reveal reveal-delay-2" data-category="campaign">
+          <div class="portfolio-image-v2 aspect-[4/3] case-media" style="--case-gradient: linear-gradient(135deg, #b8842a, #a94e21);">
+            <div class="portfolio-image-overlay"><span>View Project <i class="fa-solid fa-arrow-up-right"></i></span></div>
+          </div>
+          <div class="portfolio-card-v2-content">
+            <span class="text-paper/40 text-xs">Campaign</span>
+            <h3 class="font-display text-xl mt-1">Solstice &amp; Co.</h3>
+            <div class="portfolio-meta-v2"><small>Retail</small><small>2023</small></div>
+          </div>
+        </a>
+      </div>
+
+      <div class="text-center mt-12 reveal">
+        <a href="work.html" class="why-choose-btn">View All Projects <i class="fa-solid fa-arrow-up-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="relative py-24 md:py-32 grid-lines border-t border-white/5">
+    <div class="mx-auto max-w-4xl px-6 md:px-10">
+      <div class="text-center mb-14 reveal">
+        <div class="section-pill mb-6"><span>FAQs</span><b>05</b></div>
+        <h2 class="font-display text-3xl md:text-5xl tracking-tight">Questions? We've Got <span class="grad-text italic">Answers.</span></h2>
+        <p class="mt-4 text-paper/55">Everything you need to know about our services, process, timelines and pricing.</p>
+      </div>
+
+      <div class="space-y-4" data-faq>
+        <div class="faq-item reveal is-open">
+          <button class="faq-button" data-faq-toggle>
+            <span class="faq-number">01</span>
+            <span class="faq-question">What services does Hashtech provide?</span>
+            <span class="faq-icon"><i class="fa-solid fa-plus"></i></span>
+          </button>
+          <div class="faq-answer" style="max-height: 200px;">
+            <p class="faq-answer-inner">We provide brand strategy, identity design, web and product design, front-end development, and growth marketing, all from one integrated team.</p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal reveal-delay-1">
+          <button class="faq-button" data-faq-toggle>
+            <span class="faq-number">02</span>
+            <span class="faq-question">How long does a typical project take?</span>
+            <span class="faq-icon"><i class="fa-solid fa-plus"></i></span>
+          </button>
+          <div class="faq-answer">
+            <p class="faq-answer-inner">Timelines depend on scope. A brand identity project usually takes two to four weeks; a full website or product design engagement typically runs four to eight weeks from discovery to launch.</p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal reveal-delay-2">
+          <button class="faq-button" data-faq-toggle>
+            <span class="faq-number">03</span>
+            <span class="faq-question">Do you build custom designs or use templates?</span>
+            <span class="faq-icon"><i class="fa-solid fa-plus"></i></span>
+          </button>
+          <div class="faq-answer">
+            <p class="faq-answer-inner">Every project is designed from scratch around your brand, audience and goals. We don't work from templates.</p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal reveal-delay-3">
+          <button class="faq-button" data-faq-toggle>
+            <span class="faq-number">04</span>
+            <span class="faq-question">Can you redesign an existing website or brand?</span>
+            <span class="faq-icon"><i class="fa-solid fa-plus"></i></span>
+          </button>
+          <div class="faq-answer">
+            <p class="faq-answer-inner">Yes. We regularly redesign existing websites and identities, modernizing the visual system, improving usability and strengthening conversion.</p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal reveal-delay-4">
+          <button class="faq-button" data-faq-toggle>
+            <span class="faq-number">05</span>
+            <span class="faq-question">Do you offer ongoing support after launch?</span>
+            <span class="faq-icon"><i class="fa-solid fa-plus"></i></span>
+          </button>
+          <div class="faq-answer">
+            <p class="faq-answer-inner">Yes. We offer ongoing support and iteration packages to keep your site or product improving after it goes live.</p>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ============ CLIENT LOGOS ============ -->
-  <section class="relative py-16 md:py-20 border-b border-white/5 overflow-hidden">
-    <div class="mx-auto max-w-8xl px-6 md:px-10 mb-10 reveal">
-      <span class="text-xs tracking-[0.25em] uppercase text-paper/40">Trusted by teams building for the long run</span>
-    </div>
-    <div class="relative">
-      <div class="pointer-events-none absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-ink to-transparent z-10"></div>
-      <div class="pointer-events-none absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-ink to-transparent z-10"></div>
-      <div class="marquee-track" data-marquee>
-        <span class="font-display text-2xl md:text-3xl text-paper/30 hover:text-paper/70 transition-colors whitespace-nowrap px-8">Northbridge Capital</span>
-        <span class="font-display text-2xl md:text-3xl text-paper/30 hover:text-paper/70 transition-colors whitespace-nowrap px-8">Solstice &amp; Co.</span>
-        <span class="font-display text-2xl md:text-3xl text-paper/30 hover:text-paper/70 transition-colors whitespace-nowrap px-8">Meridian Labs</span>
-        <span class="font-display text-2xl md:text-3xl text-paper/30 hover:text-paper/70 transition-colors whitespace-nowrap px-8">Ferro Industries</span>
-        <span class="font-display text-2xl md:text-3xl text-paper/30 hover:text-paper/70 transition-colors whitespace-nowrap px-8">Amara Health</span>
-        <span class="font-display text-2xl md:text-3xl text-paper/30 hover:text-paper/70 transition-colors whitespace-nowrap px-8">Vantage Point</span>
-        <span class="font-display text-2xl md:text-3xl text-paper/30 hover:text-paper/70 transition-colors whitespace-nowrap px-8">Orenda Foods</span>
-        <span class="font-display text-2xl md:text-3xl text-paper/30 hover:text-paper/70 transition-colors whitespace-nowrap px-8">Kestrel Aviation</span>
+  <!-- ============ TESTIMONIALS ============ -->
+  <section class="relative py-24 md:py-32 border-t border-white/5">
+    <div class="mx-auto max-w-8xl px-6 md:px-10">
+      <div class="text-center max-w-2xl mx-auto mb-14 reveal">
+        <div class="section-pill mb-6"><span>Testimonials</span><b>06</b></div>
+        <h2 class="font-display text-3xl md:text-5xl tracking-tight">Trusted By Brands. <span class="grad-text italic">Loved By Clients.</span></h2>
+        <p class="mt-4 text-paper/55 max-w-lg mx-auto">Placeholder feedback in the voice we expect from clients. Swap in real testimonials once projects ship.</p>
+      </div>
+
+      <div class="testimonial-scroller reveal" data-testimonial-scroller>
+        <div class="testimonial-card w-[320px] md:w-[360px]">
+          <div class="flex items-center justify-between">
+            <div class="testimonial-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+            <span class="testimonial-quote-icon"><i class="fa-solid fa-quote-right"></i></span>
+          </div>
+          <p class="testimonial-text mt-5">Hashtech understood our positioning quickly and turned it into an identity that finally feels like us.</p>
+          <div class="flex items-center gap-3 mt-6">
+            <div class="testimonial-avatar">N</div>
+            <div class="testimonial-client-info"><h4>Founder</h4><span>Northbridge Capital</span></div>
+          </div>
+        </div>
+        <div class="testimonial-card w-[320px] md:w-[360px]">
+          <div class="flex items-center justify-between">
+            <div class="testimonial-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+            <span class="testimonial-quote-icon"><i class="fa-solid fa-quote-right"></i></span>
+          </div>
+          <p class="testimonial-text mt-5">The attention to detail was outstanding. Every stage of the process felt organized and focused on results.</p>
+          <div class="flex items-center gap-3 mt-6">
+            <div class="testimonial-avatar">A</div>
+            <div class="testimonial-client-info"><h4>Marketing Director</h4><span>Amara Health</span></div>
+          </div>
+        </div>
+        <div class="testimonial-card w-[320px] md:w-[360px]">
+          <div class="flex items-center justify-between">
+            <div class="testimonial-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+            <span class="testimonial-quote-icon"><i class="fa-solid fa-quote-right"></i></span>
+          </div>
+          <p class="testimonial-text mt-5">Our new site is faster, cleaner and noticeably better at converting visitors into enquiries.</p>
+          <div class="flex items-center gap-3 mt-6">
+            <div class="testimonial-avatar">O</div>
+            <div class="testimonial-client-info"><h4>CEO</h4><span>Orenda Foods</span></div>
+          </div>
+        </div>
+        <div class="testimonial-card w-[320px] md:w-[360px]">
+          <div class="flex items-center justify-between">
+            <div class="testimonial-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+            <span class="testimonial-quote-icon"><i class="fa-solid fa-quote-right"></i></span>
+          </div>
+          <p class="testimonial-text mt-5">A genuinely strategic partner rather than just another agency. They clarified our brand from the ground up.</p>
+          <div class="flex items-center gap-3 mt-6">
+            <div class="testimonial-avatar">K</div>
+            <div class="testimonial-client-info"><h4>Managing Director</h4><span>Kestrel Aviation</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex justify-center gap-3 mt-10 reveal">
+        <button class="testimonial-arrow-btn" data-testimonial-prev aria-label="Previous"><i class="fa-solid fa-arrow-left"></i></button>
+        <button class="testimonial-arrow-btn" data-testimonial-next aria-label="Next"><i class="fa-solid fa-arrow-right"></i></button>
       </div>
     </div>
   </section>
 
-  <!-- ============ TEXT CTA ============ -->
-  <section class="relative py-32 md:py-48 overflow-hidden">
-    <div class="mx-auto max-w-8xl px-6 md:px-10 text-center reveal">
-      <a href="contact.html" class="group inline-block">
-        <span class="font-display text-[11vw] md:text-[5.6vw] leading-none group-hover:text-htorange transition-colors duration-500">
-          Let's build something <span class="cta-arrow inline-block">↗</span>
-        </span>
-      </a>
-      <p class="mt-10 text-paper/50 text-sm tracking-wide">hello@hashtechsolutions.com — Karachi · Remote</p>
+  <!-- ============ CONTACT CTA ============ -->
+  <section class="relative py-24 md:py-32 grid-lines border-t border-white/5" id="contact">
+    <div class="mx-auto max-w-8xl px-6 md:px-10">
+      <div class="grid lg:grid-cols-12 gap-10 items-center">
+        <div class="lg:col-span-5 reveal">
+          <h2 class="font-display text-3xl md:text-4xl tracking-tight">Let's Build Something <span class="grad-text italic">Exceptional.</span></h2>
+          <p class="mt-5 text-paper/55 leading-relaxed">Have a project in mind? Tell us what you're looking for and we'll get back to you with the right approach to bring it to life.</p>
+
+          <div class="space-y-5 mt-8">
+            <a href="mailto:hello@hashtechsolutions.com" class="contact-info-item-v2">
+              <span class="contact-info-icon-v2"><i class="fa-solid fa-envelope"></i></span>
+              <span><small>Email Us</small>hello@hashtechsolutions.com</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="lg:col-span-7 reveal reveal-delay-2">
+          <div class="contact-form-card">
+            <div class="mb-8">
+              <h3 class="font-display text-2xl">Start Your Project</h3>
+              <p class="text-paper/50 text-sm mt-1">Fill out the form and let's talk about your next big idea.</p>
+            </div>
+            <form data-home-contact-form novalidate>
+              <div class="grid sm:grid-cols-2 gap-5">
+                <div class="form-field-v2">
+                  <label for="home-name">Your Name</label>
+                  <input id="home-name" name="name" type="text" required placeholder="John Smith" />
+                </div>
+                <div class="form-field-v2">
+                  <label for="home-email">Email Address</label>
+                  <input id="home-email" name="email" type="email" required placeholder="john@example.com" />
+                </div>
+                <div class="form-field-v2 sm:col-span-2">
+                  <label for="home-service">Select Service</label>
+                  <select id="home-service" name="service" required>
+                    <option value="" selected disabled>Choose a service</option>
+                    <option value="Strategy & Positioning">Strategy &amp; Positioning</option>
+                    <option value="Brand Identity">Brand Identity</option>
+                    <option value="Web & Product Design">Web &amp; Product Design</option>
+                    <option value="Development & Engineering">Development &amp; Engineering</option>
+                    <option value="Growth & Campaigns">Growth &amp; Campaigns</option>
+                    <option value="Other">Other</option>
+                  </select>
+                </div>
+                <div class="form-field-v2 sm:col-span-2">
+                  <label for="home-message">Tell Us About Your Project</label>
+                  <textarea id="home-message" name="message" required rows="4" placeholder="Tell us a little about your project..."></textarea>
+                </div>
+                <div class="sm:col-span-2">
+                  <button type="submit" class="contact-submit-btn-v2" data-submit-btn>
+                    <span data-btn-label>Send Your Enquiry</span>
+                    <span class="cta-arrow"><i class="fa-solid fa-arrow-up-right"></i></span>
+                  </button>
+                  <p data-success class="hidden mt-4 text-htgold text-sm text-center">Thank you. Your message has landed in our inbox.</p>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 </main>
 
 <!-- ============ FOOTER ============ -->
-<footer class="relative border-t border-white/5 pt-20 pb-10">
+<footer class="relative pt-16 pb-10 grid-lines">
   <div class="mx-auto max-w-8xl px-6 md:px-10">
-    <div class="grid md:grid-cols-12 gap-10 pb-16 border-b border-white/5">
-      <div class="md:col-span-5">
-        <img src="assets/hashtech%20logo.png" class="h-20 w-20 mb-6" alt="Hashtech Solutions" />
-        <p class="text-paper/50 max-w-xs leading-relaxed">A strategy-led design and technology studio for brands who want to be remembered.</p>
+    <div class="footer-glass">
+      <div class="grid md:grid-cols-12 gap-10 pb-12 border-b border-white/10">
+        <div class="md:col-span-5">
+          <img src="assets/hashtech%20logo.png" class="h-20 w-20 mb-6" alt="Hashtech Solutions" />
+          <p class="text-paper/50 max-w-xs leading-relaxed">A strategy-led design and technology studio for brands who want to be remembered.</p>
+          <div class="flex gap-3 mt-6">
+            <a href="#" class="footer-socials" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="footer-socials" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" class="footer-socials" aria-label="Behance"><i class="fa-brands fa-behance"></i></a>
+          </div>
+        </div>
+        <div class="md:col-span-2 md:col-start-7">
+          <p class="text-xs tracking-[0.25em] uppercase text-paper/40 mb-4">Sitemap</p>
+          <ul class="space-y-2 text-paper/70">
+            <li><a href="index.html" class="link-underline">Home</a></li>
+            <li><a href="work.html" class="link-underline">Work</a></li>
+            <li><a href="services.html" class="link-underline">Services</a></li>
+            <li><a href="contact.html" class="link-underline">Contact</a></li>
+          </ul>
+        </div>
+        <div class="md:col-span-2">
+          <p class="text-xs tracking-[0.25em] uppercase text-paper/40 mb-4">Connect</p>
+          <ul class="space-y-2 text-paper/70">
+            <li><a href="#" class="link-underline">Instagram</a></li>
+            <li><a href="#" class="link-underline">LinkedIn</a></li>
+            <li><a href="#" class="link-underline">Behance</a></li>
+          </ul>
+        </div>
+        <div class="md:col-span-2">
+          <p class="text-xs tracking-[0.25em] uppercase text-paper/40 mb-4">Contact</p>
+          <ul class="space-y-2 text-paper/70">
+            <li>hello@hashtechsolutions.com</li>
+          </ul>
+        </div>
       </div>
-      <div class="md:col-span-2 md:col-start-7">
-        <p class="text-xs tracking-[0.25em] uppercase text-paper/40 mb-4">Sitemap</p>
-        <ul class="space-y-2 text-paper/70">
-          <li><a href="index.html" class="link-underline">Home</a></li>
-          <li><a href="work.html" class="link-underline">Work</a></li>
-          <li><a href="services.html" class="link-underline">Services</a></li>
-          <li><a href="contact.html" class="link-underline">Contact</a></li>
-        </ul>
+      <div class="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-paper/40">
+        <p>© <span data-year></span> Hashtech Solutions. All rights reserved.</p>
+        <p>Designed and built by Hashtech Studio</p>
       </div>
-      <div class="md:col-span-2">
-        <p class="text-xs tracking-[0.25em] uppercase text-paper/40 mb-4">Connect</p>
-        <ul class="space-y-2 text-paper/70">
-          <li><a href="#" class="link-underline">Instagram</a></li>
-          <li><a href="#" class="link-underline">LinkedIn</a></li>
-          <li><a href="#" class="link-underline">Behance</a></li>
-        </ul>
-      </div>
-      <div class="md:col-span-2">
-        <p class="text-xs tracking-[0.25em] uppercase text-paper/40 mb-4">Studio</p>
-        <ul class="space-y-2 text-paper/70">
-          <li>Karachi, Pakistan</li>
-          <li>hello@hashtechsolutions.com</li>
-        </ul>
-      </div>
-    </div>
-    <div class="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-paper/40">
-      <p>© <span data-year></span> Hashtech Solutions. All rights reserved.</p>
-      <p>Design &amp; build — Hashtech Studio</p>
     </div>
   </div>
 </footer>
 
 <script src="js/main.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    /* Featured work tab filter (home) */
+    const buttons = document.querySelectorAll("[data-filter]");
+    const cards = document.querySelectorAll("[data-case-grid] .portfolio-card-v2");
+    buttons.forEach((btn) => {
+      btn.style.transition = "opacity .35s ease";
+      btn.addEventListener("click", () => {
+        buttons.forEach((b) => b.classList.remove("active"));
+        btn.classList.add("active");
+        const filter = btn.getAttribute("data-filter");
+        cards.forEach((card) => {
+          const match = filter === "all" || card.getAttribute("data-category") === filter;
+          card.style.display = match ? "" : "none";
+        });
+      });
+    });
+
+    /* FAQ accordion */
+    document.querySelectorAll("[data-faq-toggle]").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const item = btn.closest(".faq-item");
+        const answer = item.querySelector(".faq-answer");
+        const isOpen = item.classList.contains("is-open");
+        document.querySelectorAll("[data-faq] .faq-item").forEach((el) => {
+          el.classList.remove("is-open");
+          el.querySelector(".faq-answer").style.maxHeight = null;
+        });
+        if (!isOpen) {
+          item.classList.add("is-open");
+          answer.style.maxHeight = answer.scrollHeight + "px";
+        }
+      });
+    });
+
+    /* Testimonial scroller controls */
+    const scroller = document.querySelector("[data-testimonial-scroller]");
+    if (scroller) {
+      const step = () => scroller.querySelector(":scope > *").offsetWidth + 20;
+      document.querySelector("[data-testimonial-prev]")?.addEventListener("click", () => scroller.scrollBy({ left: -step(), behavior: "smooth" }));
+      document.querySelector("[data-testimonial-next]")?.addEventListener("click", () => scroller.scrollBy({ left: step(), behavior: "smooth" }));
+    }
+
+    /* Home contact form (mirrors contact.html logic) */
+    const form = document.querySelector("[data-home-contact-form]");
+    if (form) {
+      const submitBtn = form.querySelector("[data-submit-btn]");
+      const btnLabel = form.querySelector("[data-btn-label]");
+      const successMsg = form.querySelector("[data-success]");
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        let valid = true;
+        form.querySelectorAll("[required]").forEach((field) => {
+          if (!field.value.trim()) { valid = false; field.style.borderColor = "#dd6a2c"; }
+          else { field.style.borderColor = ""; }
+        });
+        if (!valid) return;
+        submitBtn.disabled = true;
+        btnLabel.textContent = "Sending…";
+        setTimeout(() => {
+          form.reset();
+          btnLabel.textContent = "Send Your Enquiry";
+          submitBtn.disabled = false;
+          successMsg.classList.remove("hidden");
+        }, 900);
+      });
+    }
+  });
+</script>
 </body>
 </html>
