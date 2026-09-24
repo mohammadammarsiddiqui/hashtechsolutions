@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Services — Hashtech Solutions</title>
+<meta name="description" content="Strategy, brand identity, product design, engineering and growth — the capabilities behind every Hashtech Solutions engagement." />
+<link rel="icon" href="assets/hashtech%20logo.png" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          ink: "#0b0b0c",
+          ink2: "#141416",
+          paper: "#f6f4ee",
+          paper2: "#eae7dd",
+          htblue: { DEFAULT: "#3184b0", dark: "#1d5678", light: "#8fc3dd" },
+          htorange: { DEFAULT: "#dd6a2c", dark: "#a94e21" },
+          htgold: { DEFAULT: "#e2a83a", dark: "#b8842a" },
+        },
+        fontFamily: {
+          display: ['"Fraunces"', "serif"],
+          sans: ['"Inter"', "sans-serif"],
+        },
+        maxWidth: { "8xl": "90rem" },
+      },
+    },
+  };
+</script>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="bg-ink text-paper font-sans antialiased">
+<div class="grain"></div>
+
+<!-- ============ NAV ============ -->
+<header data-nav class="nav-shell fixed top-0 inset-x-0 z-50">
+  <div class="mx-auto max-w-8xl px-6 md:px-10 flex items-center justify-between h-20 md:h-24">
+    <a href="index.html" class="flex items-center shrink-0">
+      <img src="assets/hashtech%20logo.png" alt="Hashtech Solutions" class="h-16 w-16 md:h-20 md:w-20 object-contain" />
+    </a>
+
+    <nav class="hidden md:flex items-center gap-10 text-sm text-paper/80">
+      <a href="index.html" class="link-underline">Home</a>
+      <a href="work.html" class="link-underline">Work</a>
+      <a href="services.html" class="link-underline text-paper">Services</a>
+      <a href="contact.html" class="link-underline">Contact</a>
+    </nav>
+
+    <a href="contact.html" class="hidden md:inline-flex items-center gap-2 text-sm text-paper group">
+      <span class="link-underline">Start a project</span>
+      <span class="cta-arrow">→</span>
+    </a>
+
+    <button data-menu-btn aria-expanded="false" aria-label="Toggle menu" class="md:hidden text-paper">
+      <svg width="26" height="26" viewBox="0 0 26 26" fill="none"><path d="M4 8H22M4 18H22" stroke="currentColor" stroke-width="1.4" /></svg>
+    </button>
+  </div>
+
+  <div data-menu-panel class="hidden md:hidden flex-col gap-8 px-6 pt-6 pb-10 bg-ink border-t border-white/5 text-2xl font-display">
+    <a href="index.html" class="text-paper/70">Home</a>
+    <a href="work.html" class="text-paper/70">Work</a>
+    <a href="services.html" class="text-paper">Services</a>
+    <a href="contact.html" class="text-paper/70">Contact</a>
+  </div>
+</header>
+
+<main>
+  <!-- ============ PAGE HERO ============ -->
+  <section class="relative overflow-hidden pt-40 pb-20 md:pt-52 md:pb-28 border-b border-white/5">
+    <div class="blob blob-secondary w-[480px] h-[480px] -top-40 -right-40 opacity-40"></div>
+    <div class="relative mx-auto max-w-8xl px-6 md:px-10">
+      <div class="grid md:grid-cols-12 gap-8 items-end">
+        <div class="md:col-span-8 reveal">
+          <p class="text-xs md:text-sm tracking-[0.25em] uppercase text-htorange mb-6">Capabilities</p>
+          <h1 class="font-display text-[11vw] leading-[0.96] md:text-[4.6vw] md:leading-[0.98] font-medium tracking-tight">
+            Strategy, design and engineering under one roof.
+          </h1>
+        </div>
+        <div class="md:col-span-4 reveal reveal-delay-2">
+          <p class="text-paper/60 leading-relaxed">
+            We don't hand off between departments — the same core team carries a project from first workshop to shipped product, so nothing gets lost in translation.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CAPABILITY 01 ============ -->
+  <section class="relative py-20 md:py-28 border-b border-white/5">
+    <div class="mx-auto max-w-8xl px-6 md:px-10">
+      <div class="grid md:grid-cols-12 gap-8">
+        <div class="md:col-span-3 reveal">
+          <span class="font-display text-5xl md:text-6xl text-paper/15">01</span>
+          <h2 class="font-display text-2xl md:text-3xl mt-4">Strategy &amp; Positioning</h2>
+        </div>
+        <div class="md:col-span-6 reveal reveal-delay-1">
+          <p class="text-paper/60 leading-relaxed text-lg">
+            Before a single pixel is placed, we get precise about what a brand is for. Market analysis, audience research and competitive mapping give us a position worth defending — one clear enough that every future decision, from tone of voice to feature roadmap, becomes obvious rather than debated.
+          </p>
+        </div>
+        <div class="md:col-span-3 reveal reveal-delay-2">
+          <ul class="space-y-3 text-paper/70 text-sm">
+            <li class="pb-3 border-b border-white/5">Brand strategy</li>
+            <li class="pb-3 border-b border-white/5">Market & audience research</li>
+            <li class="pb-3 border-b border-white/5">Naming & narrative</li>
+            <li class="pb-3">Go-to-market planning</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CAPABILITY 02 ============ -->
+  <section class="relative py-20 md:py-28 border-b border-white/5">
+    <div class="mx-auto max-w-8xl px-6 md:px-10">
+      <div class="grid md:grid-cols-12 gap-8">
+        <div class="md:col-span-3 md:order-3 reveal">
+          <span class="font-display text-5xl md:text-6xl text-paper/15">02</span>
+          <h2 class="font-display text-2xl md:text-3xl mt-4">Brand Identity</h2>
+        </div>
+        <div class="md:col-span-6 md:order-2 reveal reveal-delay-1">
+          <p class="text-paper/60 leading-relaxed text-lg">
+            Identity is more than a logo — it's a system. We design the full visual and verbal language: mark, type, colour, motion and voice, built to hold up across a pitch deck, a product interface and a shipping label with equal conviction.
+          </p>
+        </div>
+        <div class="md:col-span-3 md:order-1 reveal reveal-delay-2">
+          <ul class="space-y-3 text-paper/70 text-sm">
+            <li class="pb-3 border-b border-white/5">Visual identity systems</li>
+            <li class="pb-3 border-b border-white/5">Logo & wordmark design</li>
+            <li class="pb-3 border-b border-white/5">Brand guidelines</li>
+            <li class="pb-3">Print & packaging</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CAPABILITY 03 ============ -->
+  <section class="relative py-20 md:py-28 border-b border-white/5">
+    <div class="mx-auto max-w-8xl px-6 md:px-10">
+      <div class="grid md:grid-cols-12 gap-8">
+        <div class="md:col-span-3 reveal">
+          <span class="font-display text-5xl md:text-6xl text-paper/15">03</span>
+          <h2 class="font-display text-2xl md:text-3xl mt-4">Web &amp; Product Design</h2>
+        </div>
+        <div class="md:col-span-6 reveal reveal-delay-1">
+          <p class="text-paper/60 leading-relaxed text-lg">
+            We design interfaces the way editors lay out a page — with hierarchy, rhythm and restraint. Wireframes and prototypes are tested against real content early, so the shipped product never feels like a template with a brand painted over it.
+          </p>
+        </div>
+        <div class="md:col-span-3 reveal reveal-delay-2">
+          <ul class="space-y-3 text-paper/70 text-sm">
+            <li class="pb-3 border-b border-white/5">Website design & build</li>
+            <li class="pb-3 border-b border-white/5">Product & UX design</li>
+            <li class="pb-3 border-b border-white/5">Design systems</li>
+            <li class="pb-3">Prototyping</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CAPABILITY 04 ============ -->
+  <section class="relative py-20 md:py-28 border-b border-white/5">
+    <div class="mx-auto max-w-8xl px-6 md:px-10">
+      <div class="grid md:grid-cols-12 gap-8">
+        <div class="md:col-span-3 md:order-3 reveal">
+          <span class="font-display text-5xl md:text-6xl text-paper/15">04</span>
+          <h2 class="font-display text-2xl md:text-3xl mt-4">Development &amp; Engineering</h2>
+        </div>
+        <div class="md:col-span-6 md:order-2 reveal reveal-delay-1">
+          <p class="text-paper/60 leading-relaxed text-lg">
+            Our engineers sit in the same room as the designers, from kickoff. That means the interactions we design are ones we know how to build well — fast, accessible, and maintainable, on the stack that actually fits the problem rather than whatever's trending.
+          </p>
+        </div>
+        <div class="md:col-span-3 md:order-1 reveal reveal-delay-2">
+          <ul class="space-y-3 text-paper/70 text-sm">
+            <li class="pb-3 border-b border-white/5">Front-end engineering</li>
+            <li class="pb-3 border-b border-white/5">Web applications</li>
+            <li class="pb-3 border-b border-white/5">CMS & e-commerce builds</li>
+            <li class="pb-3">Performance & accessibility</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CAPABILITY 05 ============ -->
+  <section class="relative py-20 md:py-28 border-b border-white/5">
+    <div class="mx-auto max-w-8xl px-6 md:px-10">
+      <div class="grid md:grid-cols-12 gap-8">
+        <div class="md:col-span-3 reveal">
+          <span class="font-display text-5xl md:text-6xl text-paper/15">05</span>
+          <h2 class="font-display text-2xl md:text-3xl mt-4">Growth &amp; Campaigns</h2>
+        </div>
+        <div class="md:col-span-6 reveal reveal-delay-1">
+          <p class="text-paper/60 leading-relaxed text-lg">
+            Launch is the beginning, not the finish line. We plan and produce the campaigns that carry a brand into the world — content, paid and organic — and instrument everything so we know what's actually working.
+          </p>
+        </div>
+        <div class="md:col-span-3 reveal reveal-delay-2">
+          <ul class="space-y-3 text-paper/70 text-sm">
+            <li class="pb-3 border-b border-white/5">Campaign strategy & production</li>
+            <li class="pb-3 border-b border-white/5">Content & social</li>
+            <li class="pb-3 border-b border-white/5">Paid media</li>
+            <li class="pb-3">Analytics & reporting</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROCESS ============ -->
+  <section class="relative py-20 md:py-28 border-b border-white/5">
+    <div class="mx-auto max-w-8xl px-6 md:px-10">
+      <div class="grid md:grid-cols-12 gap-8 mb-14">
+        <div class="md:col-span-2 reveal">
+          <span class="text-xs tracking-[0.25em] uppercase text-paper/40">Process</span>
+        </div>
+        <div class="md:col-span-6 reveal reveal-delay-1">
+          <h2 class="font-display text-3xl md:text-4xl">Four stages. No shortcuts.</h2>
+        </div>
+      </div>
+      <div class="grid md:grid-cols-4 gap-8 md:gap-6">
+        <div class="reveal border-t border-white/10 pt-6">
+          <span class="text-htorange text-sm">01</span>
+          <h3 class="font-display text-xl mt-3 mb-2">Discover</h3>
+          <p class="text-paper/50 text-sm leading-relaxed">Workshops, interviews and audits to understand the real problem before proposing a solution.</p>
+        </div>
+        <div class="reveal reveal-delay-1 border-t border-white/10 pt-6">
+          <span class="text-htorange text-sm">02</span>
+          <h3 class="font-display text-xl mt-3 mb-2">Define</h3>
+          <p class="text-paper/50 text-sm leading-relaxed">Strategy, positioning and scope get locked so design has a clear brief to answer to.</p>
+        </div>
+        <div class="reveal reveal-delay-2 border-t border-white/10 pt-6">
+          <span class="text-htorange text-sm">03</span>
+          <h3 class="font-display text-xl mt-3 mb-2">Design</h3>
+          <p class="text-paper/50 text-sm leading-relaxed">Concepts are explored, tested and refined in close collaboration with your team.</p>
+        </div>
+        <div class="reveal reveal-delay-3 border-t border-white/10 pt-6">
+          <span class="text-htorange text-sm">04</span>
+          <h3 class="font-display text-xl mt-3 mb-2">Deliver</h3>
+          <p class="text-paper/50 text-sm leading-relaxed">We build, launch and stay close post-launch to make sure it performs in the real world.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TEXT CTA ============ -->
+  <section class="relative py-28 md:py-40">
+    <div class="mx-auto max-w-8xl px-6 md:px-10 text-center reveal">
+      <a href="contact.html" class="group inline-block">
+        <span class="font-display text-[9vw] md:text-[4.4vw] leading-none group-hover:text-htorange transition-colors duration-500">
+          Tell us what you're building <span class="cta-arrow inline-block">↗</span>
+        </span>
+      </a>
+    </div>
+  </section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="relative border-t border-white/5 pt-20 pb-10">
+  <div class="mx-auto max-w-8xl px-6 md:px-10">
+    <div class="grid md:grid-cols-12 gap-10 pb-16 border-b border-white/5">
+      <div class="md:col-span-5">
+        <img src="assets/hashtech%20logo.png" class="h-20 w-20 mb-6" alt="Hashtech Solutions" />
+        <p class="text-paper/50 max-w-xs leading-relaxed">A strategy-led design and technology studio for brands who want to be remembered.</p>
+      </div>
+      <div class="md:col-span-2 md:col-start-7">
+        <p class="text-xs tracking-[0.25em] uppercase text-paper/40 mb-4">Sitemap</p>
+        <ul class="space-y-2 text-paper/70">
+          <li><a href="index.html" class="link-underline">Home</a></li>
+          <li><a href="work.html" class="link-underline">Work</a></li>
+          <li><a href="services.html" class="link-underline">Services</a></li>
+          <li><a href="contact.html" class="link-underline">Contact</a></li>
+        </ul>
+      </div>
+      <div class="md:col-span-2">
+        <p class="text-xs tracking-[0.25em] uppercase text-paper/40 mb-4">Connect</p>
+        <ul class="space-y-2 text-paper/70">
+          <li><a href="#" class="link-underline">Instagram</a></li>
+          <li><a href="#" class="link-underline">LinkedIn</a></li>
+          <li><a href="#" class="link-underline">Behance</a></li>
+        </ul>
+      </div>
+      <div class="md:col-span-2">
+        <p class="text-xs tracking-[0.25em] uppercase text-paper/40 mb-4">Studio</p>
+        <ul class="space-y-2 text-paper/70">
+          <li>Karachi, Pakistan</li>
+          <li>hello@hashtechsolutions.com</li>
+        </ul>
+      </div>
+    </div>
+    <div class="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-paper/40">
+      <p>© <span data-year></span> Hashtech Solutions. All rights reserved.</p>
+      <p>Design &amp; build — Hashtech Studio</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
